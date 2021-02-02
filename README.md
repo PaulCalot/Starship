@@ -16,7 +16,7 @@ I recommend using linux or macOS for this project as future packages (like *feni
 
     Using macOS or linux : ```conda activate SS```
 
-    sur Windows : ```activate SS```
+    Using Windows : ```activate SS```
 
 4. Install required packages :
     ```shell
