@@ -1,17 +1,29 @@
 # Starship
 
-List of packages :
-```shell
-conda install python=3.9
-conda install numpy=1.19.5
-conda install scipy=1.6.0
-conda install bokeh=2.2.3
-conda install matplotlib=3.3.4
-conda install -c conda-forge ipywidgets=7.6.3
-```
+I recommend using linux or macOS for this project as future packages (like *fenics*) may be easier to use with those.
 
-Plus notebooks and jupyter lab :
-```shell
-conda install -c conda-forge notebook
-conda install -c conda-forge jupyterlab
-```
+1. Install last version of Miniconda (available [here](https://conda.io/miniconda.html)).
+
+     If you already have one installed, you can update it by typing in the shell :
+    ```shell 
+    conda update conda
+    ```
+2. Then make a new environment for this project :
+    ```shell
+    conda create -n SS python=3.9
+    ```
+3. Activate new environment :
+
+    Using macOS or linux : ```conda activate SS```
+
+    sur Windows : ```activate SS```
+
+4. Install required packages :
+    ```shell
+    conda install jupyter matplotlib numpy scipy bokeh
+    ```
+5. Launch Jupyter server :
+    ```shell
+    jupyter notebook
+    ```
+Side note : *Bokeh* works better with *jupyter notebook* than *jupyter lab*.
